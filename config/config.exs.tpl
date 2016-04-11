@@ -6,11 +6,19 @@ config :botox, Botox.Robot,
   adapter: Hedwig.Adapters.XMPP,
   name: "btx",
   aka: "/",
+
+  jid: "",
+  password: "",
+
+  rooms: [
+    # fill in the appropriate rooms for your XMPP server
+    {"room@localhost", []}
+  ],
+
   responders: [
     {Hedwig.Responders.Help, []},
-    {Hedwig.Responders.Panzy, []},
-    {Hedwig.Responders.GreatSuccess, []},
-    {Hedwig.Responders.ShipIt, []}
+    {Hedwig.Responders.Ping, []},
+    {Hedwig.Responders.GenPw, []}
   ]
 
 
