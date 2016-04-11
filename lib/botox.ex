@@ -9,6 +9,7 @@ defmodule Botox do
     children = [
       # Define workers and child supervisors to be supervised
       # worker(Botox.Worker, [arg1, arg2, arg3]),
+       worker(Botox.Robot, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
