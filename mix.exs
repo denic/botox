@@ -29,6 +29,7 @@ defmodule Botox.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
+      {:exml, github: "paulgray/exml"},
       {:hedwig_xmpp, "~> 1.0.0-rc0"}
     ]
   end
